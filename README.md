@@ -1,7 +1,7 @@
 # FSADreactapp
 group project 1 for FSAD
 
-Team Wombats 
+TEAM WOMBATS
 
 Stephen, Claudia, Matt, Katherine, Marvel, Ewan 
 
@@ -14,6 +14,7 @@ Sub-component 3: Grid/layout / Stephen
 
 Code integrator/Coordinator: Matt 
 
+TOPICS:
 HTML & CSS
 Intro to Software Development // Claudia
 OS & Networking
@@ -22,6 +23,9 @@ Server-Side Programming
 Database Design // Ewan
 Software Testing
 Cybersecurity // Matt
-Cross-Platform Development
+Cross-Platform Development // Marvel
 
-Content: What you learn in this course. Description. References. Testimonials in the future.
+Content: What you learn in this course. Description. References. (Testimonials in future implementation).
+
+Structure reference:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card
