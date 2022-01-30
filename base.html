@@ -8,33 +8,51 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <style>
+        #card {
+            border: solid black 1px;
+            margin: auto;
+            width: 25em;
+            height: 50em;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div id="root"></div>
+    <div id="container"></div>
     
 
 <script type="text/babel">
 
     const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
+
+    // course info will be part of an object array
     
-    for(let i=0;i<courses.length;i++){
+    // for(let i=0;i<courses.length;i++){
     
         const Title = function(props) {
             return(
-                <h3>{courses[i]}</h3>
+                <h3>{courses[0]}</h3>
             )
         }
         const CourseTile = function(props) 
             {
                 return <div id='card'>
                     <Title/>
+                    <p>sample text sample text sample text</p>
                     </div>
             }
             
-            ReactDOM.render(<CourseTile/>,document.getElementById('root'))
-        }
-        
+        ReactDOM.render(<CourseTile/>,document.getElementById('root'))
+
     
+
+
     </script>
 </body>
 </html>
