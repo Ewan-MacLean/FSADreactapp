@@ -1,0 +1,29 @@
+
+
+<script type="text/babel">
+
+const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
+
+for(let i=0;i<courses.length;i++){
+
+    const Title = function(props) {
+        return(
+            <h3>{props.Title}</h3>
+        )
+    }
+
+    const CourseTile = function(props) 
+        {
+            return <div id='card'>
+                <Title name = ${courses[i]} />
+                <CourseIMG source=''/>
+                <CourseLink href=''/>
+                <Description description =''/>
+                    </div>
+        }
+}
+
+ReactDOM.render(<WeatherTile/>,document.getElementById('root'))
+    
+
+</script>
