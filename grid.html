@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin></script>
+
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <link rel="stylesheet" href="grid.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+      function Grid() {
+  return (
+    <div className="App">
+
+      <div className="heading">
+      <h1>Header</h1>
+      </div>
+
+      <div className="grid1">
+      <h1>Grid1</h1>
+      </div>
+
+      <div className="grid2">
+      <h1>Grid2</h1>
+      </div>
+
+      <div className="grid3">
+      <h1>Grid3</h1>
+      </div>
+
+      <div className="grid4">
+      <h1>Grid4</h1>
+      </div>
+
+      <div className="grid5">
+      <h1>Grid5</h1>
+      </div>
+
+      <div className="grid6">
+      <h1>Grid6</h1>
+      </div>
+
+      <div className="footbar">
+      <h1>footer</h1>
+      </div>
+    </div>
+  );
+}
+
+      ReactDOM.render(<Grid/>,document.getElementById('root'));
+    </script>
+  </body>
+</html>

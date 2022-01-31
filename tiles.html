@@ -1,0 +1,45 @@
+
+
+<script type="text/babel">
+
+const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
+
+    const Title = function(props) {
+        return(
+            <h3>{props.Title}</h3>
+        )
+    }
+
+    const CourseTile = function(props) 
+        {
+            return <div id='card'>
+                <Title name = ${courses[i]} />
+                <CourseIMG source=''/>
+                <CourseLink href=''/>
+                <Description description =''/>
+                    </div>
+        }
+
+
+            // trying to get the whole array of classes sent to the root div
+            const Hello = React.createClass({
+            render: function() {
+                let names = ['Jake' ,'jon','cath'] 
+                let namelist = names.map(function(name, index) {
+                    return <li key={index}>{name}</li> 
+                })
+
+                return (
+                    <ul>
+                        {namelist}
+                    </ul>
+                    )
+            }
+        })
+        
+        ReactDOM.render(<Hello />, document.getElementById('container'))
+
+ReactDOM.render(<WeatherTile/>,document.getElementById('root'))
+    
+
+</script>
