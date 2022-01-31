@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wombats group project</title>
+    <title>Wombats Portfolio Project</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-    <style>
-        #card {
-            border: solid black 1px;
-            margin: auto;
-            width: 25em;
-            height: 50em;
-            display: flex;
-            flex-direction: column;
-            /* justify-content: center; */
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="root"></div>
     <div id="container"></div>
     
-
 <script type="text/babel">
 
     // wanted to use a for loop or array.map to display a card for each course
-    const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
+    const courses = ['Intro to Software Development','Server Side Programming','Database Design','Software Testing','Cybersecurity','TBD']
 
     // course info will be part of an object array
     
         const Title = function(props) {
             return(
-                <h3>{courses[0]}</h3>
+                <h3>{courses[4]}</h3>
             )
         }
         const CourseTile = function(props) 
             {
-                return <div id='card'>
-                    <Title/>
-                    <p>sample text sample text sample text</p>
+                return <div class='App'>
+                    <div class='card grid2'>
+                        <div class='card-inner'>
+                            <div class='card-front'>
+                                
+                            </div>
+                            <div class='card-back'>
+                                <Title/>
+                                <p>This course covers security topics that impact web developers. Explore the OWASP Top 10 security vulnerabilities. Get hands on practice of security-related web programming tasks including: providing authentication, validating input, logging and monitoring, attacking vulnerable web applications and completing Capture The Flag (CTF) challenges. Learn to protect web applications against attacks from malicious hackers.</p>
+                                <a class='shimmer' href="https://owasp.org/www-project-top-ten/" target='blank'>OWASP Top 10</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
             }
             
         ReactDOM.render(<CourseTile/>,document.getElementById('root'))
