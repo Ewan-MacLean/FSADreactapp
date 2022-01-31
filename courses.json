@@ -11,16 +11,16 @@ Description: "This course covers the programming foundations through a hands-on 
 ImgURL: "https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
 Link: "https://www.youtube.com/watch?v=s9iPo9YMU70"},
 
-{Name: "",
-Description: "",
-ImgURL: "",
-Link: ""}
+{Name: "Software Testing and Quality Control",
+Description: "This course covers writing unit tests for software as one of the best ways for developers to level up their skills. It focuses on using Jest.js an NPM package for software testing and setting up a CI system to run software tests",
+ImgURL: "https://prod-discovery.edx-cdn.org/media/course/image/b43f2cde-b38f-4717-8399-033f0aba61f4-bd6f44692f21.small.png",
+Link: "https://www.youtube.com/playlist?list=PL0zVEGEvSaeF_zoW9o66wa_UCNE3a7BEr"}
 ]
 }
 
 {Name: "Cross Platform Application Development",
-    Description: "This course covers technologies that enable web developers to use their existing skills to create desktop and mobile applications. Students will gain the additional skills required to develop cross-platform applications.",
-    ImgURL: "https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?cs=srgb&dl=pexels-pixabay-267389.jpg&fm=jpg",
-    Link: " "}
-    ]
-    }
+Description: "This course covers technologies that enable web developers to use their existing skills to create desktop and mobile applications. Students will gain the additional skills required to develop cross-platform applications.",
+ImgURL: "https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?cs=srgb&dl=pexels-pixabay-267389.jpg&fm=jpg",
+Link: " "}
+]
+}
