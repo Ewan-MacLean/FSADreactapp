@@ -32,35 +32,37 @@
 
 // const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
 
-    const Title = function(props) {
-        return(
-            <h3>{props.Title}</h3>
-        )
-    }
+    // const Title = function(props) {
+    //     return(
+    //         <h3>{props.Title}</h3>
+    //     )
+    // }
 
-    const CourseTile = function(props) 
-        {
-            return <div id='card'>
-                <p>
-                    {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
-                </p>
-                </div>
-        }
+    // const CourseTile = function(props) 
+    //     {
+    //         return <div id='card'>
+    //             <p>
+    //                 {props.courses.map(q=><tr key={q.title}><p>{q.title}</p><p>{q.description}</p></tr>)}
+    //             </p>
+    //             </div>
+    //     }
 
         const CourseList = function(props)
         {
             return(
-                <table>
-                    <tbody>
-                    {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
-                    </tbody>
-                </table>
+                <div>
+                    <div id='card'>
+                        <p>
+                            {props.courses.map(q=><p key={q.title}><p>{q.title}</p><p>{q.description}</p></p>)}
+                        </p>
+                    </div>
+                </div>
             )
         }
 
         const Output = function(props)
         {
-            const courses = [{title:'Into to SWD',description:2000},{title:'Database Design',description:27},{title:'CRO',description: 22}]
+            const courses = [{title:'Into to SWD',description:2000},{title:'Database Design',description:27},{title:'Cross-platform dev',description: 22}]
 
             // you can only return one thing. Thats why we use the <div> tag to enclose
             // the components under one object
@@ -73,7 +75,7 @@
 
         ReactDOM.render(<Output/>,document.getElementById('root'))
 
-        // ReactDOM.render(<CourseTile/>,document.getElementById('root'))
+        // ReacpOM.render(<CourseTile/>,document.getElementById('root'))
     
 
 </script>
