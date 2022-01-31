@@ -1,5 +1,5 @@
 
-[
+var courses = [
 
 {
 "Name": "Cybersecurity", 
