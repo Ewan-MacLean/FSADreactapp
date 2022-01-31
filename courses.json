@@ -8,7 +8,7 @@
         ,
         
         {Name: "Intro to Software Development",
-        Description: "This course covers the programming foundations through a hands-on approach students will exercise every day logical thinking and JavaScript language. The products, could be like a calculator, branching stories, buble sort, and even the Battleship game. Maybe simple, but essential - the first steps to become able to program wathever the mind imagines.",
+        Description: "This course covers the programming foundations through a hands-on approach students will exercise every day logical thinking and JavaScript language. Programming a calculator, branching stories or the battleship game are the first steps to become to program anything imagined.",
         ImgURL: "https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
         Link: "https://www.youtube.com/watch?v=s9iPo9YMU70"}
         ,
@@ -34,6 +34,12 @@
             Description: "This course covers technologies that enable web developers to use their existing skills to create desktop and mobile applications. Students will gain the additional skills required to develop cross-platform applications.",
             ImgURL: "https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?cs=srgb&dl=pexels-pixabay-267389.jpg&fm=jpg",
             Link: " "}
+        ,
+        {Name: "Front End Programming",
+            Description: "In this course, students can practice programming using the web browser console, use script tags, event handling and manipulate the Document Object Model.",
+            ImgURL: "https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            Link: "https://bioub.github.io/dom-visualizer/"}
+
 
 ]} 
 
