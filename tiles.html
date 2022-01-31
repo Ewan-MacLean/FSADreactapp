@@ -1,8 +1,36 @@
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wombats Portfolio Project</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        #card {
+            border: solid black 1px;
+            margin: auto;
+            width: 25em;
+            height: 50em;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="container"></div>
+    
 <script type="text/babel">
 
-const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
+// const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
 
     const Title = function(props) {
         return(
@@ -13,33 +41,41 @@ const courses = ['Into to SWD','Server Side programming','Database Design','Soft
     const CourseTile = function(props) 
         {
             return <div id='card'>
-                <Title name = ${courses[i]} />
-                <CourseIMG source=''/>
-                <CourseLink href=''/>
-                <Description description =''/>
-                    </div>
+                <p>
+                    {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
+                </p>
+                </div>
         }
 
+        const CourseList = function(props)
+        {
+            return(
+                <table>
+                    <tbody>
+                    {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
+                    </tbody>
+                </table>
+            )
+        }
 
-            // trying to get the whole array of classes sent to the root div
-            const Hello = React.createClass({
-            render: function() {
-                let names = ['Jake' ,'jon','cath'] 
-                let namelist = names.map(function(name, index) {
-                    return <li key={index}>{name}</li> 
-                })
+        const Output = function(props)
+        {
+            const courses = [{title:'Into to SWD',description:2000},{title:'Database Design',description:27},{title:'CRO',description: 22}]
 
-                return (
-                    <ul>
-                        {namelist}
-                    </ul>
-                    )
-            }
-        })
-        
-        ReactDOM.render(<Hello />, document.getElementById('container'))
+            // you can only return one thing. Thats why we use the <div> tag to enclose
+            // the components under one object
+            return(
+                <div>
+                    <CourseList courses={courses}/>
+                </div>
+                )
+        }
 
-ReactDOM.render(<WeatherTile/>,document.getElementById('root'))
+        ReactDOM.render(<Output/>,document.getElementById('root'))
+
+        // ReactDOM.render(<CourseTile/>,document.getElementById('root'))
     
 
 </script>
+</body>
+</html>

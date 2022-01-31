@@ -15,12 +15,12 @@ Link: "https://www.youtube.com/watch?v=s9iPo9YMU70"},
 Description: "",
 ImgURL: "",
 Link: ""}
-]
-}
-
+],
 {Name: "Cross Platform Application Development",
     Description: "This course covers technologies that enable web developers to use their existing skills to create desktop and mobile applications. Students will gain the additional skills required to develop cross-platform applications.",
     ImgURL: "https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?cs=srgb&dl=pexels-pixabay-267389.jpg&fm=jpg",
     Link: ""}
     ]
     }
+}
+
