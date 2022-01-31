@@ -1,0 +1,19 @@
+{
+[
+{Name: "Cybersecurity",
+Description: "This course covers security topics that impact web developers. Explore the OWASP Top 10 security vulnerabilities. Get hands on practice of security-related web programming tasks including: providing authentication, validating input, logging and monitoring, attacking vulnerable web applications 
+and completing Capture The Flag (CTF) challenges. Learn to protect web applications against attacks from malicious hackers.",
+ImgURL: "",
+Link: ""},
+
+{Name: "Intro to Software Development",
+Description: "This course covers the programming foundations through a hands-on approach students will exercise every day logical thinking and JavaScript language. The products, could be like a calculator, branching stories, buble sort, and even the Battleship game. Maybe simple, but essential - the first steps to become able to program wathever the mind imagines.",
+ImgURL: "https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+Link: "https://www.youtube.com/watch?v=s9iPo9YMU70"},
+
+{Name: "",
+Description: "",
+ImgURL: "",
+Link: ""}
+]
+}
