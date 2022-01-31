@@ -1,0 +1,19 @@
+//Header
+
+<h1>NSCC Full-Stack - What We Learn</h1>
+
+//CSS updates
+
+.heading {
+    grid-area: heading;
+    font-size:larger;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    background-color: #004477;
+}
+
+.footbar{
+    grid-area: footbar;
+    background-color: #004477;
+}
