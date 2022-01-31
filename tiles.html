@@ -32,29 +32,36 @@
 
 // const courses = ['Into to SWD','Server Side programming','Database Design','Software Testing','Cybersecurity','TBD']
 
-    const Title = function(props) {
-        return(
-            <h3>{props.Title}</h3>
-        )
-    }
+    // const Title = function(props) {
+    //     return(
+    //         <h3>{props.Title}</h3>
+    //     )
+    // }
 
-    const CourseTile = function(props) 
-        {
-            return <div id='card'>
-                <p>
-                    {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
-                </p>
-                </div>
-        }
+    // const CourseTile = function(props) 
+    //     {
+    //         return <div id='card'>
+    //             <p>
+    //                 {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
+    //             </p>
+    //             </div>
+    //     }
 
         const CourseList = function(props)
         {
             return(
-                <table>
-                    <tbody>
-                    {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
-                    </tbody>
-                </table>
+                <div>
+                    <table>
+                        <tbody>
+                        {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
+                        </tbody>
+                    </table>
+                    <div id='card'>
+                        <p>
+                            {props.courses.map(q=><tr key={q.title}><td>{q.title}</td><td>{q.description}</td></tr>)}
+                        </p>
+                    </div>
+                </div>
             )
         }
 
