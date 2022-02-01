@@ -18,62 +18,36 @@
     
 <script type="text/babel">
 
-    // wanted to use a for loop or array.map to display a card for each course
-    for (let n = 0; n<courses.length; n++) {
-    // console.log(courses[n])
-    let Title = function(props) {
-                return(
-                    <h3>{courses[n].Name}</h3>
-                )
-            }
+    // Use CoursesArray.map to display a card for each course
+
             const CourseTile = function(props) 
                 {
-                    return <div class='App'>
-                        <div class= {'card grid' + n}>
-                            <div class='card-inner'>
-                                <div class='card-front'></div>
-                                <div class='card-back'>
-                                    <Title/>
-                                    <p>{courses[n].Description}</p>
-                                    <a class='shimmer' href="{courses[n].Link}" target='blank'>TBdefined</a>
-                                </div>
+
+                return (
+                <div className='App'>
+                    {props.courses.map(function(course) {
+
+                        return (
+                    <div className= {'card grid' + course.id} key={course.id} >
+                        <div className='card-inner'>
+                            <div className='card-front'></div>
+                            <div className='card-back'>
+                                <h3> {course.Name}</h3>
+                                <p>{course.Description}</p>
+                                <a className='shimmer' href={course.Link} target='blank'>Learn More</a>
                             </div>
                         </div>
                     </div>
+                    )
+                })}
+
+                </div>    
+                    
+                )
                 }
                 
-            ReactDOM.render(<CourseTile/>,document.getElementById('root'))
+                ReactDOM.render(React.createElement(CourseTile, {courses: courses}),document.getElementById('root'))
 
-
-}
-
-
-    // const coursess = ['Intro to Software Development','Server Side Programming','Database Design','Software Testing','Cybersecurity','TBD']
-
-    // // course info will be part of an object array
-    
-    //     const Title = function(props) {
-    //         return(
-    //             <h3>{coursess[4]}</h3>
-    //         )
-    //     }
-    //     const CourseTile = function(props) 
-    //         {
-    //             return <div class='App'>
-    //                 <div class='card grid2'>
-    //                     <div class='card-inner'>
-    //                         <div class='card-front'></div>
-    //                         <div class='card-back'>
-    //                             <Title/>
-    //                             <p>This course covers security topics that impact web developers. Explore the OWASP Top 10 security vulnerabilities. Get hands on practice of security-related web programming tasks including: providing authentication, validating input, logging and monitoring, attacking vulnerable web applications and completing Capture The Flag (CTF) challenges. Learn to protect web applications against attacks from malicious hackers.</p>
-    //                             <a class='shimmer' href="https://owasp.org/www-project-top-ten/" target='blank'>OWASP Top 10</a>
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         }
-            
-    //     ReactDOM.render(<CourseTile/>,document.getElementById('root'))
 
 
         
@@ -81,7 +55,3 @@
     </script>
 </body>
 </html>
-<!-- 
-<CourseIMG source=''/>
-<CourseLink href=''/>
-<Description description =''/> -->
